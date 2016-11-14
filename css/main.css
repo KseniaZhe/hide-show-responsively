@@ -1,0 +1,50 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+img:nth-child(2) {
+  display: none;
+}
+
+img:nth-child(4) {
+  display: none;
+}
+
+@media only screen and (min-width: 25em) {
+
+  img,
+  img:nth-child(2),
+  img:nth-child(4) {
+    display: inline-block;
+    width: 49%;
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  img:first-child {
+    display: none;
+  }
+
+  img,
+  img:nth-child(2),
+  img:nth-child(4) {
+    width: 32.5%;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  img,
+  img:first-child,
+  img:nth-child(2),
+  img:nth-child(4) {
+    width: 24.5%;
+    display: inline-block;
+  }
